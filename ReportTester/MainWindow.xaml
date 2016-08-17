@@ -1,0 +1,9 @@
+﻿<Window
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:Custom="http://schemas.componentone.com/wpf/PdfViewer" x:Class="ReportTester.MainWindow"
+        Title="MainWindow" Height="350" Width="684" Loaded="Window_Loaded">
+    <Grid>
+        <Custom:C1PdfViewer Name="ReportViewer" HorizontalAlignment="Center" VerticalAlignment="Top"/>
+    </Grid>
+</Window>
