@@ -1,11 +1,9 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 2013
-VisualStudioVersion = 12.0.21005.1
+# Visual Studio 14
+VisualStudioVersion = 14.0.25420.1
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SSRSReporting", "MotorSReporting\SSRSReporting.csproj", "{42FDE5E1-53E0-4951-A68B-0C2AE97B85CC}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ReportTester", "ReportTester\ReportTester.csproj", "{54B640D5-3F41-4959-8585-81003C5C2963}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -17,10 +15,6 @@ Global
 		{42FDE5E1-53E0-4951-A68B-0C2AE97B85CC}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{42FDE5E1-53E0-4951-A68B-0C2AE97B85CC}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{42FDE5E1-53E0-4951-A68B-0C2AE97B85CC}.Release|Any CPU.Build.0 = Release|Any CPU
-		{54B640D5-3F41-4959-8585-81003C5C2963}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{54B640D5-3F41-4959-8585-81003C5C2963}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{54B640D5-3F41-4959-8585-81003C5C2963}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{54B640D5-3F41-4959-8585-81003C5C2963}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

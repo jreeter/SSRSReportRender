@@ -1,11 +1,8 @@
-﻿using System;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using SSRSReporting.phxssrs;
-using SSRSReporting.ReportService;
 using System.Net;
+using ReportExecution;
+using ReportServices;
 
 namespace SSRSReporting
 {
@@ -17,6 +14,7 @@ namespace SSRSReporting
         private string _executionAddress;
         private string _serviceAddress;
         private ICredentials _credentials;
+        
         private ReportExecutionService _executionService;
         private ReportingService2010 _reportService;
 
@@ -54,7 +52,7 @@ namespace SSRSReporting
         public byte[] ExecuteReport(string reportPath, string reportFormat)
         {
            string extension, encoding, mimeType;
-           SSRSReporting.phxssrs.Warning[] warnings = null;
+           ReportExecution.Warning[] warnings = null;
            string[] streamIDS = null;
            _executionService.LoadReport2(reportPath, null); 
            return _executionService.Render2(reportFormat, null, PageCountMode.Estimate, out extension, out mimeType, out encoding, out warnings, out streamIDS);
@@ -70,14 +68,14 @@ namespace SSRSReporting
         /// <returns></returns>
         public byte[] ExecuteReport(string reportPath, string reportFormat, Dictionary<string,string> reportParameters)
         {
-            SSRSReporting.phxssrs.ParameterValue[] parameters = reportParameters.Select(x => new SSRSReporting.phxssrs.ParameterValue()
+            ReportExecution.ParameterValue[] parameters = reportParameters.Select(x => new ReportExecution.ParameterValue()
             {
                 Name = x.Key,
                 Value = x.Value
             }).ToArray();
 
             string extension, encoding, mimeType;
-            SSRSReporting.phxssrs.Warning[] warnings = null;
+            ReportExecution.Warning[] warnings = null;
             string[] streamIDS = null;
            
             //do the magic

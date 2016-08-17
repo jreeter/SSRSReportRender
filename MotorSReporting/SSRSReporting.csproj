@@ -50,17 +50,14 @@
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
       <DependentUpon>Settings.settings</DependentUpon>
     </Compile>
+    <Compile Include="ReportExecutionService.cs" />
+    <Compile Include="ReportingService2010.cs" />
+    <Compile Include="Service References\Execution\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Compile>
     <Compile Include="SSRSReportClient.cs" />
-    <Compile Include="Web References\phxssrs\Reference.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>Reference.map</DependentUpon>
-    </Compile>
-    <Compile Include="Web References\ReportService\Reference.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>Reference.map</DependentUpon>
-    </Compile>
   </ItemGroup>
   <ItemGroup>
     <None Include="app.config" />
@@ -68,154 +65,133 @@
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
     </None>
-    <None Include="Web References\phxssrs\DocumentMapNode1.datasource">
-      <DependentUpon>Reference.map</DependentUpon>
+    <None Include="Service References\Execution\ReportExecution2005.wsdl" />
+    <None Include="Service References\Execution\SSRSReporting.Execution.DocumentMapNode.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
     </None>
-    <None Include="Web References\phxssrs\ExecutionInfo1.datasource">
-      <DependentUpon>Reference.map</DependentUpon>
+    <None Include="Service References\Execution\SSRSReporting.Execution.ExecutionHeader.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
     </None>
-    <None Include="Web References\phxssrs\ExecutionInfo21.datasource">
-      <DependentUpon>Reference.map</DependentUpon>
+    <None Include="Service References\Execution\SSRSReporting.Execution.ExecutionInfo.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
     </None>
-    <None Include="Web References\phxssrs\Extension1.datasource">
-      <DependentUpon>Reference.map</DependentUpon>
+    <None Include="Service References\Execution\SSRSReporting.Execution.ExecutionInfo2.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
     </None>
-    <None Include="Web References\phxssrs\Reference.map">
-      <Generator>MSDiscoCodeGenerator</Generator>
-      <LastGenOutput>Reference.cs</LastGenOutput>
+    <None Include="Service References\Execution\SSRSReporting.Execution.Extension.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
     </None>
-    <None Include="Web References\phxssrs\reportexecution2005.wsdl" />
-    <None Include="Web References\phxssrs\Warning1.datasource">
-      <DependentUpon>Reference.map</DependentUpon>
+    <None Include="Service References\Execution\SSRSReporting.Execution.FindStringResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
     </None>
-    <None Include="Web References\ReportService\ActiveState.datasource">
-      <DependentUpon>Reference.map</DependentUpon>
+    <None Include="Service References\Execution\SSRSReporting.Execution.GetDocumentMapResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
     </None>
-    <None Include="Web References\ReportService\CacheRefreshPlan.datasource">
-      <DependentUpon>Reference.map</DependentUpon>
+    <None Include="Service References\Execution\SSRSReporting.Execution.GetExecutionInfo2Response.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
     </None>
-    <None Include="Web References\ReportService\CacheRefreshPlanState.datasource">
-      <DependentUpon>Reference.map</DependentUpon>
+    <None Include="Service References\Execution\SSRSReporting.Execution.GetExecutionInfoResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
     </None>
-    <None Include="Web References\ReportService\CatalogItem.datasource">
-      <DependentUpon>Reference.map</DependentUpon>
+    <None Include="Service References\Execution\SSRSReporting.Execution.GetRenderResourceResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
     </None>
-    <None Include="Web References\ReportService\DataRetrievalPlan.datasource">
-      <DependentUpon>Reference.map</DependentUpon>
+    <None Include="Service References\Execution\SSRSReporting.Execution.ListRenderingExtensionsResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
     </None>
-    <None Include="Web References\ReportService\DataSetDefinition.datasource">
-      <DependentUpon>Reference.map</DependentUpon>
+    <None Include="Service References\Execution\SSRSReporting.Execution.ListSecureMethodsResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
     </None>
-    <None Include="Web References\ReportService\DataSource.datasource">
-      <DependentUpon>Reference.map</DependentUpon>
+    <None Include="Service References\Execution\SSRSReporting.Execution.LoadDrillthroughTarget2Response.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
     </None>
-    <None Include="Web References\ReportService\DataSourceDefinition.datasource">
-      <DependentUpon>Reference.map</DependentUpon>
+    <None Include="Service References\Execution\SSRSReporting.Execution.LoadDrillthroughTargetResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
     </None>
-    <None Include="Web References\ReportService\DataSourcePrompt.datasource">
-      <DependentUpon>Reference.map</DependentUpon>
+    <None Include="Service References\Execution\SSRSReporting.Execution.LoadReport2Response.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
     </None>
-    <None Include="Web References\ReportService\Event.datasource">
-      <DependentUpon>Reference.map</DependentUpon>
+    <None Include="Service References\Execution\SSRSReporting.Execution.LoadReportDefinition2Response.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
     </None>
-    <None Include="Web References\ReportService\ExpirationDefinition.datasource">
-      <DependentUpon>Reference.map</DependentUpon>
+    <None Include="Service References\Execution\SSRSReporting.Execution.LoadReportDefinitionResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
     </None>
-    <None Include="Web References\ReportService\Extension.datasource">
-      <DependentUpon>Reference.map</DependentUpon>
+    <None Include="Service References\Execution\SSRSReporting.Execution.LoadReportResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
     </None>
-    <None Include="Web References\ReportService\ExtensionParameter.datasource">
-      <DependentUpon>Reference.map</DependentUpon>
+    <None Include="Service References\Execution\SSRSReporting.Execution.LogoffResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
     </None>
-    <None Include="Web References\ReportService\ExtensionSettings.datasource">
-      <DependentUpon>Reference.map</DependentUpon>
+    <None Include="Service References\Execution\SSRSReporting.Execution.LogonUserResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
     </None>
-    <None Include="Web References\ReportService\ItemHistorySnapshot.datasource">
-      <DependentUpon>Reference.map</DependentUpon>
+    <None Include="Service References\Execution\SSRSReporting.Execution.NavigateBookmarkResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
     </None>
-    <None Include="Web References\ReportService\ItemParameter.datasource">
-      <DependentUpon>Reference.map</DependentUpon>
+    <None Include="Service References\Execution\SSRSReporting.Execution.NavigateDocumentMapResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
     </None>
-    <None Include="Web References\ReportService\ItemReferenceData.datasource">
-      <DependentUpon>Reference.map</DependentUpon>
+    <None Include="Service References\Execution\SSRSReporting.Execution.Render2Response.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
     </None>
-    <None Include="Web References\ReportService\Job.datasource">
-      <DependentUpon>Reference.map</DependentUpon>
+    <None Include="Service References\Execution\SSRSReporting.Execution.RenderResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
     </None>
-    <None Include="Web References\ReportService\ModelCatalogItem.datasource">
-      <DependentUpon>Reference.map</DependentUpon>
+    <None Include="Service References\Execution\SSRSReporting.Execution.RenderStreamResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
     </None>
-    <None Include="Web References\ReportService\ModelDrillthroughReport.datasource">
-      <DependentUpon>Reference.map</DependentUpon>
+    <None Include="Service References\Execution\SSRSReporting.Execution.ResetExecution2Response.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
     </None>
-    <None Include="Web References\ReportService\ModelItem.datasource">
-      <DependentUpon>Reference.map</DependentUpon>
+    <None Include="Service References\Execution\SSRSReporting.Execution.ResetExecutionResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
     </None>
-    <None Include="Web References\ReportService\ParameterValue.datasource">
-      <DependentUpon>Reference.map</DependentUpon>
+    <None Include="Service References\Execution\SSRSReporting.Execution.ServerInfoHeader.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
     </None>
-    <None Include="Web References\ReportService\ParameterValueOrFieldReference.datasource">
-      <DependentUpon>Reference.map</DependentUpon>
+    <None Include="Service References\Execution\SSRSReporting.Execution.SetExecutionCredentials2Response.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
     </None>
-    <None Include="Web References\ReportService\Policy.datasource">
-      <DependentUpon>Reference.map</DependentUpon>
+    <None Include="Service References\Execution\SSRSReporting.Execution.SetExecutionCredentialsResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
     </None>
-    <None Include="Web References\ReportService\Property.datasource">
-      <DependentUpon>Reference.map</DependentUpon>
+    <None Include="Service References\Execution\SSRSReporting.Execution.SetExecutionParameters2Response.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
     </None>
-    <None Include="Web References\ReportService\Reference.map">
-      <Generator>MSDiscoCodeGenerator</Generator>
-      <LastGenOutput>Reference.cs</LastGenOutput>
+    <None Include="Service References\Execution\SSRSReporting.Execution.SetExecutionParametersResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
     </None>
-    <None Include="Web References\ReportService\reportservice2010.wsdl" />
-    <None Include="Web References\ReportService\Role.datasource">
-      <DependentUpon>Reference.map</DependentUpon>
+    <None Include="Service References\Execution\SSRSReporting.Execution.Sort2Response.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
     </None>
-    <None Include="Web References\ReportService\Schedule.datasource">
-      <DependentUpon>Reference.map</DependentUpon>
+    <None Include="Service References\Execution\SSRSReporting.Execution.SortResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
     </None>
-    <None Include="Web References\ReportService\ScheduleDefinitionOrReference.datasource">
-      <DependentUpon>Reference.map</DependentUpon>
+    <None Include="Service References\Execution\SSRSReporting.Execution.ToggleItemResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
     </None>
-    <None Include="Web References\ReportService\Subscription.datasource">
-      <DependentUpon>Reference.map</DependentUpon>
+    <None Include="Service References\Execution\SSRSReporting.Execution.Warning.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
     </None>
-    <None Include="Web References\ReportService\Task.datasource">
-      <DependentUpon>Reference.map</DependentUpon>
-    </None>
-    <None Include="Web References\ReportService\Warning.datasource">
-      <DependentUpon>Reference.map</DependentUpon>
-    </None>
-  </ItemGroup>
-  <ItemGroup>
-    <WebReferences Include="Web References\" />
-  </ItemGroup>
-  <ItemGroup>
-    <WebReferenceUrl Include="http://phxssrs/reportserver/reportexecution2005.asmx">
-      <UrlBehavior>Dynamic</UrlBehavior>
-      <RelPath>Web References\phxssrs\</RelPath>
-      <UpdateFromURL>http://phxssrs/reportserver/reportexecution2005.asmx</UpdateFromURL>
-      <ServiceLocationURL>
-      </ServiceLocationURL>
-      <CachedDynamicPropName>
-      </CachedDynamicPropName>
-      <CachedAppSettingsObjectName>Settings</CachedAppSettingsObjectName>
-      <CachedSettingsPropName>MotorSReporting_phxssrs_ReportExecutionService</CachedSettingsPropName>
-    </WebReferenceUrl>
-    <WebReferenceUrl Include="http://phxssrs/reportserver/reportservice2010.asmx">
-      <UrlBehavior>Dynamic</UrlBehavior>
-      <RelPath>Web References\ReportService\</RelPath>
-      <UpdateFromURL>http://phxssrs/reportserver/reportservice2010.asmx</UpdateFromURL>
-      <ServiceLocationURL>
-      </ServiceLocationURL>
-      <CachedDynamicPropName>
-      </CachedDynamicPropName>
-      <CachedAppSettingsObjectName>Settings</CachedAppSettingsObjectName>
-      <CachedSettingsPropName>SSRSReporting_ReportService_ReportingService2010</CachedSettingsPropName>
-    </WebReferenceUrl>
   </ItemGroup>
   <ItemGroup>
     <WCFMetadata Include="Service References\" />
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadataStorage Include="Service References\Execution\" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\Execution\configuration91.svcinfo" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\Execution\configuration.svcinfo" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\Execution\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
